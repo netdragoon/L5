@@ -15,5 +15,6 @@
     return view('welcome');
 });*/
 
-Route::get('/', ['as' => 'zipcode.index', 'uses' => 'ZipCodeController@index']);
+Route::get('/', ['as' => 'zipcode', 'uses' => 'ZipCodeController@index']);
+Route::get('/zipcode', ['as' => 'zipcode.index', 'uses' => 'ZipCodeController@index']);
 Route::post('zipcode/get', ['as' => 'zipcode.get', 'uses' => 'ZipCodeController@get']);
