@@ -33,12 +33,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="javascript:;">Artesãos ZipCode</a>
+            <a class="navbar-brand" href="javascript:;">Canducci ZipCode</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="https://github.com/artesaos" target="_blank">Acesse: GitHub Artesãos</a></li>
-            </ul>
+            <!--<ul class="nav navbar-nav">
+                <li><a href="" target="_blank"></a></li>
+            </ul>-->
         </div>
     </div>
 </nav>
