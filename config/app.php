@@ -143,7 +143,7 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Artesaos\ZipCode\Providers\ZipCodeServiceProvider::class
+        /*Artesaos\ZipCode\Providers\ZipCodeServiceProvider::class*/
 
     ],
 

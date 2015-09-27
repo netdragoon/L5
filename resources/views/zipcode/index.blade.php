@@ -18,6 +18,10 @@
         <div ng-if="error" class="text-success">
             <code>CEP não encontrado</code>
         </div>
+        <div ng-if="data.gia" class="text-success">
+            <code>GIA</code>
+            <div style="padding-left:10px;">%%data.gia%%</div>
+        </div>
         <div ng-if="data.ibge" class="text-success">
             <code>IBGE</code>
             <div style="padding-left:10px;">%%data.ibge%%</div>

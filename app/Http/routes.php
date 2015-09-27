@@ -17,7 +17,7 @@
 
 Route::get('/', ['as' => 'zipcode', 'uses' => 'ZipCodeController@index']);
 Route::get('/zipcode', ['as' => 'zipcode.index', 'uses' => 'ZipCodeController@index']);
-Route::post('zipcode/get', ['as' => 'zipcode.get', 'uses' => 'ZipCodeController@get']);
+Route::post('/zipcode/get', ['as' => 'zipcode.get', 'uses' => 'ZipCodeController@get']);
 
 Route::get('/address', ['as' => 'zipcodeaddress.index', 'uses' => 'ZipCodeController@address']);
-Route::post('address/get', ['as' => 'zipcodeaddress.get', 'uses' => 'ZipCodeController@addressget']);
+Route::post('/address/get', ['as' => 'zipcodeaddress.get', 'uses' => 'ZipCodeController@addressget']);

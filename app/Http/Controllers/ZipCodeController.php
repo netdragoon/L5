@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Response;
-use Artesaos\ZipCode\Facades\ZipCode;
+use Canducci\ZipCode\Facades\ZipCode;
 
 class ZipCodeController extends Controller {
 
