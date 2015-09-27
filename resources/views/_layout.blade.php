@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Artesãos ZipCode ">
+    <meta name="description" content="Canducci ZipCode ">
     <meta name="author" content="Fúlvio Cezar Canducci Dias">    
-    <title>Artesãos ZipCode</title>
+    <title>Canducci ZipCode</title>
     <link href="{!! asset('css/bootstrap.min.css') !!}" rel="stylesheet">
     <link href="{!! asset('css/starter-template.css') !!}" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
