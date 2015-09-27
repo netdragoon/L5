@@ -23,7 +23,7 @@ class ZipCodeController extends Controller {
             mb_strlen($zip) === 8 &&
             preg_match("/^[0-9]{8}?$/", $zip))
         {
-            $zipcodeinfo = ZipCode::find($zip);
+            $zipcodeinfo = zipcode($zip, true);
             if ($zipcodeinfo)
             {
                 return $zipcodeinfo->getJson();
