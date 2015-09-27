@@ -31,4 +31,14 @@ class ZipCodeController extends Controller {
         }
         return Response::json(['error' => 1]);
     }
+
+    public function address()
+    {
+        return 'endereço';
+    }
+
+    public function addressget()
+    {
+        return "";
+    }
 }
