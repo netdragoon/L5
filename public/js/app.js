@@ -45,23 +45,39 @@ App.controller('AddressCtrl', function($scope, $http, $window)
 
     $scope.load = function()
     {
-        $("#imgLoading").fadeIn();
-        $http({ url: "/address/get",
-            method:'POST',
-            params:{
-                'uf': $scope.uf,
-                'cidade': $scope.cidade,
-                'endereco': $scope.endereco,
-                '_token': $scope.getToken()
-            }
-        }).success(function (data) {
+        if ($scope.uf.length == 2 &&
+            $scope.cidade.length > 2 &&
+            $scope.endereco.length > 2)
+        {
+            $("#imgLoading").fadeIn();
+            $http({
+                url: "/address/get",
+                method: 'POST',
+                params: {
+                    'uf': $scope.uf,
+                    'cidade': $scope.cidade,
+                    'endereco': $scope.endereco,
+                    '_token': $scope.getToken()
+                }
+            })
+                .success(function (data)
+            {
+                $scope.data = data;
+                $("#uf").focus();
+                $("#imgLoading").fadeOut('2500');
+            })
+                .error(function(error)
+            {
+                $("#uf").focus();
+                $("#imgLoading").fadeOut('2500');
+                $scope.clear();
 
-            $scope.data = data;
-
-            $("#uf").focus();
-            $("#imgLoading").fadeOut('2500');
-
-        });
+            });
+        }
+        else
+        {
+            alert("Erros:\n\rUF com duas letras\n\rCidade com mais de 2 letras\n\rEndereço com mais de 2 letras")
+        }
     }
 
 });

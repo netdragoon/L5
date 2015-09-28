@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "4e2fef1acff6bfc77ef6bb42736d2596",
+    "content-hash": "1f1249e0caed917fb6bf600f5d918384",
     "packages": [
         {
             "name": "canducci/zipcode",
@@ -12,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/diasfulvio/zipcode.git",
-                "reference": "53bfa82cc4e400536a33ac1320386445f995cd9d"
+                "reference": "01ea06704cc8bd2c2b7393a9532bb53d2e49d837"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/diasfulvio/zipcode/zipball/53bfa82cc4e400536a33ac1320386445f995cd9d",
-                "reference": "53bfa82cc4e400536a33ac1320386445f995cd9d",
+                "url": "https://api.github.com/repos/diasfulvio/zipcode/zipball/01ea06704cc8bd2c2b7393a9532bb53d2e49d837",
+                "reference": "01ea06704cc8bd2c2b7393a9532bb53d2e49d837",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +61,7 @@
                 "zip",
                 "zipcode"
             ],
-            "time": "2015-09-27 14:30:31"
+            "time": "2015-09-28 01:20:44"
         },
         {
             "name": "classpreloader/classpreloader",
