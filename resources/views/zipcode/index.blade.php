@@ -4,15 +4,15 @@
         <form class="form-inline" ng-submit="load()">
             <input type="hidden" id="_token" name="_token" value="{!!csrf_token()!!}">
             <div class="form-group">
-                <code>Exemplo de formato: 01414000 (somente números)</code>
+                <code>Exemplo: 01414000 (somente números)</code> <a href="javascript:;" ng-click="generate()">[Simular o Exemplo]</a>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="margin-top: 12px;">
                 <label class="sr-only" for="zip">Digite o CEP:</label>
                 <input  title="Preencha o campo com um CEP de 8 números" type="text" class="form-control" ng-model="zip" id="zip" placeholder="CEP" required="required" maxlength="8" autofocus pattern="\d{8}" only-num>
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+                <button type="submit" class="btn btn-danger" ng-click="clear()"><span class="glyphicon glyphicon-minus-sign"></span></button>
+                <img src="{!!asset('imagem/loading.gif')!!}" border="0" id="imgLoading" style="width:30px;border:0;display:none;" />
             </div>
-            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-            <button type="submit" class="btn btn-danger" ng-click="clear()"><span class="glyphicon glyphicon-minus-sign"></span></button>
-            <img src="{!!asset('imagem/loading.gif')!!}" border="0" id="imgLoading" style="width:30px;border:0;display:none;" />
         </form>
         <p ng-if="data.ibge">
         <div ng-if="error" class="text-success">

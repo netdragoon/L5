@@ -124,7 +124,14 @@ App.controller('Ctrl', function($scope, $http, $window)
     {
         $scope.$apply();
     }
-    
+
+    $scope.generate = function()
+    {
+        $scope.clear();
+        $scope.zip = '01414000';
+        $scope.load();
+    }
+
     $scope.load = function()
     {
         if ($scope.verify())

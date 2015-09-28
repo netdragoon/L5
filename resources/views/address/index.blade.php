@@ -26,6 +26,9 @@
                     <img src="{!!asset('imagem/loading.gif')!!}" border="0" id="imgLoading" style="width:30px;border:0;display: none" />
                 </div>
             </div>
+            <div class="form-group">
+               <var>Observação:</var>  <small>A pesquisa tem por restrição os 100 primeiros endereços conforme informação no WebService</small>
+            </div>
         </form>
         <table class="table table-condensed table-hover">
             <!--
@@ -45,6 +48,11 @@
                 </tr>
             </thead>-->
             <tbody>
+                <tr ng-if="data.length > 0">
+                    <td colspan="4" style="width: 100%;text-align: left">
+                        <small>Quantidade de Endereços:</small> <code>%%data.length%%</code>
+                    </td>
+                </tr>
                 <tr ng-repeat="d in data" ng-class="$index % 2 == 0 ? 'info':'warning'">
                     <td>
                         <h5><small>CEP</small></h5>
