@@ -41,6 +41,7 @@ App.controller('AddressCtrl', function($scope, $http, $window)
         $scope.cidade = '';
         $scope.endereco = '';
         $scope.error = false;
+        $("#uf").focus();
     }
 
     $scope.load = function()
@@ -63,12 +64,14 @@ App.controller('AddressCtrl', function($scope, $http, $window)
                 .success(function (data)
             {
                 $scope.data = data;
+                $scope.error = (parseInt(data.length) === 0);
+
                 $("#uf").focus();
                 $("#imgLoading").fadeOut('2500');
             })
                 .error(function(error)
             {
-                $("#uf").focus();
+
                 $("#imgLoading").fadeOut('2500');
                 $scope.clear();
 

@@ -69,6 +69,11 @@
                         <p>%%d.gia%%</p>
                     </td>
                 </tr>
+                <tr ng-if="error">
+                    <td colspan="4" style="width: 100%;text-align: center">
+                        <h4>Não existe resultado para essa pesquisa !!!</h4>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>

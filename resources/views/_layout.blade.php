@@ -36,9 +36,10 @@
             <a class="navbar-brand" href="javascript:;">Canducci ZipCode</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-            <!--<ul class="nav navbar-nav">
-                <li><a href="" target="_blank"></a></li>
-            </ul>-->
+            <ul class="nav navbar-nav">
+                <li><a href="/" target="_self">Consulta por CEP</a></li>
+                <li><a href="/address" target="_self">Consulta por Endereço</a></li>
+            </ul>
         </div>
     </div>
 </nav>
