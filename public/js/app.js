@@ -44,6 +44,16 @@ App.controller('AddressCtrl', function($scope, $http, $window)
         $("#uf").focus();
     }
 
+    $scope.generate = function()
+    {
+
+        $scope.clear();
+        $scope.uf = 'SP';
+        $scope.cidade = 'SAO PAULO';
+        $scope.endereco = 'ALV';
+        $scope.load();
+
+    }
     $scope.load = function()
     {
         if ($scope.uf.length == 2 &&

@@ -5,7 +5,7 @@
         <form ng-submit="load()">
             <input type="hidden" id="_token" name="_token" value="{!!csrf_token()!!}">
             <div class="form-group">
-                <code>Exemplo: UF: SP / Cidade: São Paulo / Endereço: Alv</code>
+                <code>Exemplo: UF: SP / Cidade: São Paulo / Endereço: Alv</code> <a href="javascript:;" ng-click="generate()">[Simular o Exemplo]</a>
             </div>
             <div class="row">
                 <div class="form-group col-md-1">
