@@ -5,7 +5,7 @@
         <form ng-submit="load()">
             <input type="hidden" id="_token" name="_token" value="{!!csrf_token()!!}">
             <div class="form-group">
-                <code>Exemplo de formato: 01414000 (somente números)</code>
+                <code>Exemplo: UF: SP / Cidade: São Paulo / Endereço: Alv</code>
             </div>
             <div class="row">
                 <div class="form-group col-md-1">
