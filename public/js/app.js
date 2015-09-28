@@ -21,6 +21,50 @@ App.config(function($interpolateProvider)
   $interpolateProvider.startSymbol('%%');
   $interpolateProvider.endSymbol('%%');
 });
+App.controller('AddressCtrl', function($scope, $http, $window)
+{
+    $scope.data = [];
+    $scope.uf = '';
+    $scope.cidade = '';
+    $scope.endereco = '';
+    $scope.error = false;
+
+    $scope.getToken = function()
+    {
+        return $("#_token").val();
+    }
+
+    $scope.clear = function()
+    {
+        $scope.data = [];
+        $scope.uf = '';
+        $scope.cidade = '';
+        $scope.endereco = '';
+        $scope.error = false;
+    }
+
+    $scope.load = function()
+    {
+        $("#imgLoading").fadeIn();
+        $http({ url: "/address/get",
+            method:'POST',
+            params:{
+                'uf': $scope.uf,
+                'cidade': $scope.cidade,
+                'endereco': $scope.endereco,
+                '_token': $scope.getToken()
+            }
+        }).success(function (data) {
+
+            $scope.data = data;
+
+            $("#uf").focus();
+            $("#imgLoading").fadeOut('2500');
+
+        });
+    }
+
+});
 
 App.controller('Ctrl', function($scope, $http, $window)
 {
