@@ -21,7 +21,7 @@
                     <input title="Endereço" type="text" class="form-control" ng-model="endereco" id="endereco" placeholder="Endereço" required="required">
                 </div>
                 <div class="form-group col-md-3">
-                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
                     <button type="button" class="btn btn-danger" ng-click="clear()"><span class="glyphicon glyphicon-minus-sign"></span></button>
                     <img src="{!!asset('imagem/loading.gif')!!}" border="0" id="imgLoading" style="width:30px;border:0;display: none" />
                 </div>

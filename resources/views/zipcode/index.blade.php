@@ -10,8 +10,8 @@
                 <label class="sr-only" for="zip">Digite o CEP:</label>
                 <input  title="Preencha o campo com um CEP de 8 números" type="text" class="form-control" ng-model="zip" id="zip" placeholder="CEP" required="required" maxlength="8" autofocus pattern="\d{8}" only-num>
             </div>
-            <button type="submit" class="btn btn-default">Pesquisar</button>
-            <button type="submit" class="btn btn-danger" ng-click="clear()">Limpar</button>
+            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+            <button type="submit" class="btn btn-danger" ng-click="clear()"><span class="glyphicon glyphicon-minus-sign"></span></button>
             <img src="{!!asset('imagem/loading.gif')!!}" border="0" id="imgLoading" style="width:30px;border:0;display:none;" />
         </form>
         <p ng-if="data.ibge">
