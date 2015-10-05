@@ -24,7 +24,7 @@ App.config(function($interpolateProvider)
 App.controller('AddressCtrl', function($scope, $http, $window)
 {
     $scope.data = [];
-    $scope.uf = '';
+    $scope.uf = 'sp';
     $scope.cidade = '';
     $scope.endereco = '';
     $scope.error = false;
@@ -37,7 +37,7 @@ App.controller('AddressCtrl', function($scope, $http, $window)
     $scope.clear = function()
     {
         $scope.data = [];
-        $scope.uf = '';
+        $scope.uf = 'sp';
         $scope.cidade = '';
         $scope.endereco = '';
         $scope.error = false;
@@ -48,7 +48,7 @@ App.controller('AddressCtrl', function($scope, $http, $window)
     {
 
         $scope.clear();
-        $scope.uf = 'SP';
+        $scope.uf = 'sp';
         $scope.cidade = 'SAO PAULO';
         $scope.endereco = 'ALV';
         $scope.load();

@@ -8,11 +8,17 @@
                 <code>Exemplo: UF: SP / Cidade: São Paulo / Endereço: Alv</code> <a href="javascript:;" ng-click="generate()">[Simular o Exemplo]</a>
             </div>
             <div class="row">
-                <div class="form-group col-md-1">
+                <div class="form-group col-md-2">
                     <label class="sr-only" for="zip">UF:</label>
-                    <input title="Unidade Federativa" type="text" class="form-control" ng-model="uf" id="uf" placeholder="UF" required="required" maxlength="2" autofocus>
+                    <select id="uf" ng-model="uf" class="form-control" autofocus>
+                        @if (isset($lists))
+                        @foreach($lists as $key => $value)
+                            <option value="{{$value}}">{{$key}}</option>
+                        @endforeach
+                        @endif
+                    </select>
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-3">
                     <label class="sr-only" for="zip">Cidade:</label>
                     <input title="Cidade" type="text" class="form-control" ng-model="cidade" id="cidade" placeholder="Cidade" required="required">
                 </div>

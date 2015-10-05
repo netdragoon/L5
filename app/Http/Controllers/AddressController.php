@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Response;
+use Canducci\ZipCode\ZipCodeUf;
 
 class AddressController extends Controller {
 
@@ -12,7 +13,9 @@ class AddressController extends Controller {
 
     public function index()
     {
-        return view('address.index');
+        $lists = ZipCodeUf::lists();
+        return view('address.index')
+            ->with('lists', $lists);
     }
 
     public function get(Request $request)

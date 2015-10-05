@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use Canducci\ZipCode\ZipCodeUf;
 use Illuminate\Http\Request;
 use Response;
 
@@ -12,9 +13,7 @@ class ZipCodeController extends Controller {
 
     public function index()
     {
-
         return view('zipcode.index');
-
     }
 
     public function get(Request $request)
